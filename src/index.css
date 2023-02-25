@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: ghostwhite;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0em 2em;
+}
+
+/* .logo {
+    width: em;
+} */
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: ease-in-out .2s;
+}
+
+a:hover {
+    color: tomato;
+}
+
+a:focus {
+    color: tomato;
+}
+
+ul {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+.donate {
+    padding: .5em .7em;
+    background: none;
+    border-radius: 18px;
+    border: 1px solid;
+    font-size: 1em;
+    margin-left: 2em;
+    transition: ease-in-out .2s;
+}
+
+.donate:hover {
+    color: tomato;
+    border: 1px solid tomato;
+    padding: .5em .8em;
+}
