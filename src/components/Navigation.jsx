@@ -1,11 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <>
+    <div className="jumbo">
       <nav>
         <div className="logo">
-          <Link to='/'><img src="" alt="mtaani foundation logo" /></Link>
+          <Link to="/">
+            <img
+              src="../../public/header-logo.png"
+              alt="mtaani foundation logo"
+            />
+          </Link>
         </div>
         <div className="navbar">
           <ul>
@@ -30,7 +35,11 @@ const Navigation = () => {
           </ul>
         </div>
       </nav>
-    </>
+      <div className="hero"></div>
+      <div className="outlet">
+        <Outlet />
+      </div>
+    </div>
   );
 };
 
